@@ -26,4 +26,5 @@ def main(page: ft.Page):
     page.add(ft.ElevatedButton("Cargar libros", on_click=cargar_libros), lista)
 
 
-ft.app(target=main, port=int(os.environ.get("PORT", 8080)))
+if __name__ == "__main__":
+    ft.run(main, port=int(os.environ.get("PORT", 10000)))
