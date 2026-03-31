@@ -26,4 +26,4 @@ def main(page: ft.Page):
     page.add(ft.ElevatedButton("Cargar libros", on_click=cargar_libros), lista)
 
 
-ft.app(target=main, view=ft.WEB_BROWSER, port=int(os.environ.get("PORT", 8000)))
+ft.app(target=main, port=int(os.environ.get("PORT", 8080)))
