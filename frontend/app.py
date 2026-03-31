@@ -31,5 +31,4 @@ if __name__ == "__main__":
         main,
         host="0.0.0.0",
         port=int(os.environ.get("PORT", 10000)),
-        web_renderer=ft.WebRenderer.HTML,
     )
