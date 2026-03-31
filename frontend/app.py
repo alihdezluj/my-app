@@ -27,4 +27,9 @@ def main(page: ft.Page):
 
 
 if __name__ == "__main__":
-    ft.run(main, host="0.0.0.0", port=int(os.environ.get("PORT", 10000)))
+    ft.run(
+        main,
+        host="0.0.0.0",
+        port=int(os.environ.get("PORT", 10000)),
+        web_renderer="html",
+    )
