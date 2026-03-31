@@ -1,7 +1,7 @@
 import flet as ft
 import httpx
 
-API_URL = "http://127.0.0.1:8000/books"
+API_URL = "https://my-app-t2fs.onrender.com"
 
 
 def main(page: ft.Page):
