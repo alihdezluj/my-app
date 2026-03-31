@@ -1,7 +1,7 @@
 import flet as ft
 import httpx
 
-API_URL = "https://my-app-t2fs.onrender.com"
+API_URL = "https://my-app-t2fs.onrender.com/books"
 
 
 def main(page: ft.Page):
@@ -24,4 +24,4 @@ def main(page: ft.Page):
     page.add(ft.ElevatedButton("Cargar libros", on_click=cargar_libros), lista)
 
 
-ft.app(target=main)
+ft.app(target=main, view=ft.WEB_BROWSER)
